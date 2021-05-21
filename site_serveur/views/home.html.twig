@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang='en'>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Titre par defaut{% endblock %}</title>
-    </head>
-    <body>
-        <div class="content">
-            <h1>Test</h1>
-        </div>
-    </body>
-</html>
+{% extends "base.html.twig" %}
+
+{% block contenu %}
+    <h1>Home Page</h1>
+{% endblock %}
