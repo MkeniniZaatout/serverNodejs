@@ -5,7 +5,7 @@ const twig = require('twig');
 routeur.get('/', (req, res) => {
     res.render("home.html.twig");
 });
-  
+   
 routeur.get('/test', (req, res) => {
     console.log("demande recue avec la méthode get sur l'url /test");
     console.log(req.path);
