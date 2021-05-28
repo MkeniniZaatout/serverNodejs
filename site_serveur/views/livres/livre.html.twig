@@ -1,19 +1,19 @@
 {% extends "base.html.twig" %}
 
-{% block titre %} {{nom}} {% endblock %}
+{% block titre %} {{livre.nom}} {% endblock %}
 
 {% block contenu %}
     <div class="mt-5 row m-2">
         <div class="col-md-6">
             <h3>Information </h3>
-            <div> Auteur : </div>
-            <div> Année : </div>
-            <div> Nombre de page : </div>
+            <div> Auteur : {{livre.auteur}} </div>
+            <div> Année : {{livre.annee}} </div>
+            <div> Nombre de page : {{livre.pages}} </div>
             <img src='https://th.bing.com/th/id/OIP.M9AsZ7Sm6Qq-LXpY92Tt2AHaEK?w=312&h=180&c=7&o=5&pid=1.7'>
         </div>
         <div class="col-md-6 text-center">
             <h3>Résumé </h3>
-            <p class='font-weight-bold'>Sed cursus ultricies odio, quis pellentesque turpis fringilla vel. Aenean vel nisi a neque volutpat pretium sit amet quis mi. Nunc eu maximus dui. Nulla facilisi. Nulla ultrices sem nec rutrum mollis. Etiam maximus ut arcu vitae molestie. Vestibulum auctor pretium arcu, aliquam tristique nisi convallis et. Maecenas eleifend convallis dictum. Etiam in ligula vel dui facilisis maximus. Proin ultrices diam erat, ut scelerisque ligula tristique id. Ut vitae sollicitudin augue. Vivamus massa erat, cursus quis sagittis quis, facilisis et risus. Sed mattis tellus sagittis turpis dapibus efficitur.</p>
+            <p class='font-weight-bold'>{{livre.description}}</p>
         </div>
     </div>
 
